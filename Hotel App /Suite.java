@@ -11,8 +11,9 @@ public class Suite extends Habitacion {
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
-        System.out.println("Tiene jacuzzi: " + (tieneJacuzzi ? "Sí" : "No"));
-        System.out.println("Tiene vista al mar: " + (tieneVistaMar ? "Sí" : "No"));
+        System.out.println("Tipo: Suite");
+        System.out.println("Jacuzzi: " + (tieneJacuzzi ? "Sí" : "No"));
+        System.out.println("Vista al mar: " + (tieneVistaMar ? "Sí" : "No"));
+        System.out.println("----------------------------------");
     }
 }
-
