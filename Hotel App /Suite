@@ -1,1 +1,18 @@
+public class Suite extends Habitacion {
+    private boolean tieneJacuzzi;
+    private boolean tieneVistaMar;
+
+    public Suite(int numero, double precioPorNoche, boolean tieneJacuzzi, boolean tieneVistaMar) {
+        super(numero, precioPorNoche);
+        this.tieneJacuzzi = tieneJacuzzi;
+        this.tieneVistaMar = tieneVistaMar;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Tiene jacuzzi: " + (tieneJacuzzi ? "Sí" : "No"));
+        System.out.println("Tiene vista al mar: " + (tieneVistaMar ? "Sí" : "No"));
+    }
+}
 
