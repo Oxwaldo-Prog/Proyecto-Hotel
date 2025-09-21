@@ -1,3 +1,4 @@
+package hotel;
 public class HabitacionSencilla extends Habitacion {
     private int camasIndividuales;
 
