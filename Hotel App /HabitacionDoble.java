@@ -1,3 +1,4 @@
+package hotel;
 public class HabitacionDoble extends Habitacion {
     private int camasDobles;
 
