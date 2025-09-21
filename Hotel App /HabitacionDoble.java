@@ -9,7 +9,9 @@ public class HabitacionDoble extends Habitacion {
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
+        System.out.println("Tipo: Doble");
         System.out.println("Camas dobles: " + camasDobles);
+        System.out.println("----------------------------------");
     }
 }
 
