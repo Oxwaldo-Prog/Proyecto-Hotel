@@ -1,3 +1,4 @@
+package hotel;
 public class Habitacion {
     private int numero;
     private double precioPorNoche;
