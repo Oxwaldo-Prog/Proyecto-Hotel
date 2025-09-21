@@ -1,3 +1,4 @@
+package hotel;
 public class Suite extends Habitacion {
     private boolean tieneJacuzzi;
     private boolean tieneVistaMar;
