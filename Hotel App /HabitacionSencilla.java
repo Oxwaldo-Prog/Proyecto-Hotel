@@ -9,7 +9,9 @@ public class HabitacionSencilla extends Habitacion {
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
+        System.out.println("Tipo: Sencilla");
         System.out.println("Camas individuales: " + camasIndividuales);
+        System.out.println("----------------------------------");
     }
 }
 
