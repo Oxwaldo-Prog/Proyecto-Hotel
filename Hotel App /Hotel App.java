@@ -14,14 +14,14 @@ public class Main {
 
         int opcion;
         do {
-            System.out.println("\n=== MENÚ HOTEL ===");
-            System.out.println("1. Ver información de habitaciones");
-            System.out.println("2. Reservar habitación");
-            System.out.println("3. Liberar habitación");
+            System.out.println("\n=== MENU HOTEL ===");
+            System.out.println("1. Ver informacion de habitaciones");
+            System.out.println("2. Reservar habitacion");
+            System.out.println("3. Liberar habitacion");
             System.out.println("4. Calcular costo de estancia");
-            System.out.println("5. Modificar precio de habitación");
+            System.out.println("5. Modificar precio de habitacion");
             System.out.println("0. Salir");
-            System.out.print("Elige una opción: ");
+            System.out.print("Elige una opcion: ");
             opcion = sc.nextInt();
 
             switch (opcion) {
@@ -33,29 +33,29 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.print("Número de habitación a reservar: ");
+                    System.out.print("Numero de habitación a reservar: ");
                     int numReserva = sc.nextInt();
                     Habitacion habReserva = buscarHabitacion(habitaciones, numReserva);
                     if (habReserva != null) {
                         habReserva.reservar();
                     } else {
-                        System.out.println("Habitación no encontrada.");
+                        System.out.println("Habitacion no encontrada.");
                     }
                     break;
 
                 case 3:
-                    System.out.print("Número de habitación a liberar: ");
+                    System.out.print("Numero de habitacion a liberar: ");
                     int numLiberar = sc.nextInt();
                     Habitacion habLiberar = buscarHabitacion(habitaciones, numLiberar);
                     if (habLiberar != null) {
                         habLiberar.liberar();
                     } else {
-                        System.out.println("Habitación no encontrada.");
+                        System.out.println("Habitacion no encontrada.");
                     }
                     break;
 
                 case 4:
-                    System.out.print("Número de habitación: ");
+                    System.out.print("Numero de habitacion: ");
                     int numCosto = sc.nextInt();
                     Habitacion habCosto = buscarHabitacion(habitaciones, numCosto);
                     if (habCosto != null) {
@@ -63,12 +63,12 @@ public class Main {
                         int noches = sc.nextInt();
                         System.out.println("Costo total: $" + habCosto.calcularCosto(noches));
                     } else {
-                        System.out.println("Habitación no encontrada.");
+                        System.out.println("Habitacion no encontrada.");
                     }
                     break;
 
                 case 5:
-                    System.out.print("Número de habitación: ");
+                    System.out.print("Numero de habitacion: ");
                     int numModificar = sc.nextInt();
                     Habitacion habModificar = buscarHabitacion(habitaciones, numModificar);
                     if (habModificar != null) {
@@ -77,7 +77,7 @@ public class Main {
                         habModificar.setPrecioPorNoche(nuevoPrecio);
                         System.out.println("Precio actualizado correctamente.");
                     } else {
-                        System.out.println("Habitación no encontrada.");
+                        System.out.println("Habitacion no encontrada.");
                     }
                     break;
 
@@ -86,7 +86,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Opción inválida, intenta de nuevo.");
+                    System.out.println("Opcion inválida, intenta de nuevo.");
             }
 
         } while (opcion != 0);
